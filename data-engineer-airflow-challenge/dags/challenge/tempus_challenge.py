@@ -170,9 +170,6 @@ def upload_to_s3(**context):
     main_df = context['ti'].xcom_pull(task_ids=["retreive_top_headlines"],
                                       key='top_headlines')
 
-    ACCESS_KEY = 'AKIAVYSCB7IQ2IGHP2VN'
-    SECRET_KEY = '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'
-
     bucket = 'tempus-challenge-suraj'  # already created on S3
     csv_buffer = StringIO()
     main_df[0].to_csv(csv_buffer, index=False)
