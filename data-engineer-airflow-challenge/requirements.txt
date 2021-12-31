@@ -1,0 +1,9 @@
+apache-airflow[crypto,s3,password,postgres]==1.9.0
+boto3==1.7.4
+psycopg2==2.7.5
+requests==2.19.0
+werkzeug<1.0
+numpy==1.19.2
+pandas==1.0.5
+fsspec<0.8.4
+pylint==2.6.0
